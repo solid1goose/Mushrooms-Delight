@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mushrooms-delight:item/brown_mushroom_pieces",
+    "particles": "mushrooms-delight:item/brown_mushroom_pieces"
+  }
+}

@@ -15,12 +15,20 @@ import java.util.List;
 public class ModItems {
     public static List<ModItem> newItems = new ArrayList<>();
 
+    public static final ModItem FRIED_RED = new FriedRed();
+    public static final ModItem FRIED_BROWN = new FriedBrown();
+
     public static final ModItem CHICKEN_STUFFED_MUSHROOMS = new ChickenStuffedMushrooms();
     public static final ModItem SPIDER_EYES_SOUP = new SpiderEyesSoupItem();
     public static final ModItem MUSHROOM_BROTH = new MushroomBroth();
     public static final ModItem MUSHROOM_POTATO_PIE = new MushroomPotatoPie();
     public static final ModItem RISOTTO = new Risotto();
     public static final ModItem JULIENNE = new Julienne();
+
+    public static final ModItem RED_PIECES = new RedPieces();
+    public static final ModItem DRIED_RED_PIECES = new DriedRedPieces();
+    public static final ModItem BROWN_PIECES = new BrownPieces();
+    public static final ModItem DRIED_BROWN_PIECES = new DriedBrownPieces();
 
     public static final ModItem TEA_SPEED = new TeaSpeed();
     public static final ModItem TEA_MINE = new TeaMine();

@@ -1,4 +1,6 @@
 {
+  "item.mushrooms-delight.fried_brown_mushroom": "Fried brown mushroom",
+  "item.mushrooms-delight.fried_red_mushroom": "Fried red mushroom",
   "item.mushrooms-delight.spider_eye_soup": "Mushroom soup with spider's eyes",
   "item.mushrooms-delight.mushroom_broth": "Mushroom broth",
   "item.mushrooms-delight.chicken_stuffed_mushrooms": "Chicken stuffed with mushrooms",
@@ -7,6 +9,9 @@
   "item.mushrooms-delight.mushroom_potato_pie": "Mushroom and potato bun",
   "item.mushrooms-delight.speed_tea": "Tea",
   "item.mushrooms-delight.mine_tea": "Tea",
-
+  "item.mushrooms-delight.brown_mushroom_pieces": "Pieces of brown mushroom",
+  "item.mushrooms-delight.red_mushroom_pieces": "Pieces of red mushroom",
+  "item.mushrooms-delight.dried_brown_mushroom_pieces": "Dried pieces of brown mushroom",
+  "item.mushrooms-delight.dried_red_mushroom_pieces": "Dried pieces of red mushroom",
   "effect.mushrooms-delight.mushroom_speed": "Mushroom speed"
 }
