@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:spider_eye",
+    "minecraft:rotten_flesh"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "mushrooms-delight:spider_eye_soup"
+  }
+}

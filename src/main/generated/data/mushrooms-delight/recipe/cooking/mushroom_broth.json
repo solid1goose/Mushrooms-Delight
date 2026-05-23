@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredients": [
+    "#c:mushrooms",
+    "minecraft:redstone",
+    "minecraft:sugar"
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "id": "mushrooms-delight:mushroom_broth"
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "mushrooms-delight",
+	"version": "${version}",
+	"name": "Mushrooms Delight",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"IvanPunk"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mushrooms-delight/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ivan.mushroomsdelight.MushroomsDelight"
+		],
+		"client": [
+			"ivan.mushroomsdelight.client.MushroomsDelightClient"
+		],
+		"fabric-datagen": [
+			"ivan.mushroomsdelight.DataGenerate"
+		]
+	},
+	"mixins": [
+		"mushrooms-delight.mixins.json",
+		{
+			"config": "mushrooms-delight.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

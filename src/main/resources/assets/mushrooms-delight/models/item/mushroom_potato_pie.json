@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mushrooms-delight:item/mushroom_potato_pie",
+    "particles": "mushrooms-delight:item/mushroom_potato_pie"
+  }
+}

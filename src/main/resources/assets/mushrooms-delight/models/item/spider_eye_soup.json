@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mushrooms-delight:item/spider_eye_soup",
+    "particles": "mushrooms-delight:item/spider_eye_soup"
+  }
+}

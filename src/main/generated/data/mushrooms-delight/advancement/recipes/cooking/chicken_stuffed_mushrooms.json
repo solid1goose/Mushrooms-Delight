@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_any_ingredient": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:chicken",
+              "minecraft:red_mushroom",
+              "minecraft:brown_mushroom"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mushrooms-delight:cooking/chicken_stuffed_mushrooms"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_any_ingredient"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mushrooms-delight:cooking/chicken_stuffed_mushrooms"
+    ]
+  }
+}

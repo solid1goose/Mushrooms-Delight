@@ -1,0 +1,13 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    "farmersdelight:rice",
+    "#c:mushrooms",
+    "farmersdelight:onion"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "mushrooms-delight:risotto"
+  }
+}

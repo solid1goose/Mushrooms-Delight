@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mushrooms-delight:item/speed_tea",
+    "particles": "mushrooms-delight:item/speed_tea"
+  }
+}

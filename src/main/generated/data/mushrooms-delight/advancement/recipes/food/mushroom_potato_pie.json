@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mushrooms-delight:mushroom_potato_pie"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "open_mushroom_pie": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:red_mushroom"
+          },
+          {
+            "items": "minecraft:brown_mushroom"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "open_mushroom_pie"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mushrooms-delight:mushroom_potato_pie"
+    ]
+  }
+}

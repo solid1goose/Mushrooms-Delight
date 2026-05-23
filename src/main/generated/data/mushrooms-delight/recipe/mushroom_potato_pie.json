@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:potato",
+    "#c:mushrooms"
+  ],
+  "result": {
+    "id": "mushrooms-delight:mushroom_potato_pie"
+  }
+}
