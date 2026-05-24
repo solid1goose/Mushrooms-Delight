@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "mushrooms-delight:warped_fungus_pieces",
+  "result": {
+    "id": "mushrooms-delight:dried_warped_fungus"
+  }
+}

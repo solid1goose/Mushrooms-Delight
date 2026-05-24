@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "mushrooms-delight:brown_mushroom_pieces",
+  "result": {
+    "id": "mushrooms-delight:dried_brown_mushroom_pieces"
+  }
+}

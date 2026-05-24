@@ -6,6 +6,7 @@ import net.minecraft.world.food.FoodProperties;
 public class ChickenStuffedMushrooms extends ModItem {
     public ChickenStuffedMushrooms() {
         super(new Properties()
+                        .stacksTo(16)
                         .food(new FoodProperties(10, 0.5F, false)),
                 "chicken_stuffed_mushrooms");
     }

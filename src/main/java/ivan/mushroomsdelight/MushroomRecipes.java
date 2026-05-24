@@ -1,6 +1,8 @@
 package ivan.mushroomsdelight;
 
 import ivan.mushroomsdelight.recipes.CraftingTableRecipes;
+import ivan.mushroomsdelight.recipes.CuttingRecipes;
+import ivan.mushroomsdelight.recipes.FurnaceRecipes;
 import ivan.mushroomsdelight.recipes.PotRecipes;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -20,6 +22,8 @@ public class MushroomRecipes extends FabricRecipeProvider {
         return new RecipeProvider(registries, output) {
             @Override
             public void buildRecipes() {
+                CuttingRecipes.register(registries, this.output);
+                FurnaceRecipes.register(registries,this.output);
                 CraftingTableRecipes.register(registries, this.output);
                 PotRecipes.register(registries, this.output);
             }

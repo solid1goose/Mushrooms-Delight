@@ -1,7 +1,10 @@
 package ivan.mushroomsdelight;
 
 import ivan.mushroomsdelight.effects.ModEffects;
+import ivan.mushroomsdelight.events.AttackEntity;
+import ivan.mushroomsdelight.events.EntityTakeDamage;
 import ivan.mushroomsdelight.items.ModItems;
+import ivan.mushroomsdelight.particles.ParticlesRegister;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +20,8 @@ public class MushroomsDelight implements ModInitializer {
 		CreativeTabWindow.CreativeTabWindowRegister();
 		ModItems.initialize();
 		ModEffects.initialize();
+		ParticlesRegister.register();
+		AttackEntity.register();
+//		EntityTakeDamage.register();
 	}
 }

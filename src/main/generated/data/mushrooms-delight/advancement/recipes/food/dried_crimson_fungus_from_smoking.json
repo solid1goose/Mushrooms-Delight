@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_fungus_pieces": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mushrooms-delight:crimson_fungus_pieces"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mushrooms-delight:dried_crimson_fungus_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crimson_fungus_pieces"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mushrooms-delight:dried_crimson_fungus_from_smoking"
+    ]
+  }
+}

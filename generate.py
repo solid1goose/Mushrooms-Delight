@@ -5,7 +5,7 @@ base_path = "src/main/resources/assets"
 lang_path = "src/main/resources/assets/mushrooms-delight/lang/en_us.json"
 
 items = [
-    "fried_brown_mushroom", "fried_red_mushroom"
+    "cigarette"
 ]
 
 # --- Обновляем lang файл ---

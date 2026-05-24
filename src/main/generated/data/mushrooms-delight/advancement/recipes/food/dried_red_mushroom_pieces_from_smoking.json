@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_mushroom_pieces": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mushrooms-delight:red_mushroom_pieces"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mushrooms-delight:dried_red_mushroom_pieces_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_mushroom_pieces"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mushrooms-delight:dried_red_mushroom_pieces_from_smoking"
+    ]
+  }
+}

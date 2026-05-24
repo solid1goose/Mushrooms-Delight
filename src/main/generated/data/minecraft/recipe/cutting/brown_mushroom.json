@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    "minecraft:brown_mushroom"
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "mushrooms-delight:brown_mushroom_pieces"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "id": "minecraft:bone_meal"
+      }
+    }
+  ],
+  "tool": "#c:tools/knife"
+}

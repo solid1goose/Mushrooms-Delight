@@ -1,10 +1,10 @@
-package ivan.mushroomsdelight.effects;
+package ivan.mushroomsdelight.effects.musroomeffects;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 
-public class MushroomSpeed extends MobEffect {
-    protected MushroomSpeed() {
+public class MushroomTouch extends MobEffect {
+    public MushroomTouch() {
         super(MobEffectCategory.BENEFICIAL, 15971072);
     }
 }

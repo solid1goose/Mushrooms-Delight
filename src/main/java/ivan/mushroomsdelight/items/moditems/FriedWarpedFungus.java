@@ -11,6 +11,6 @@ public class FriedWarpedFungus extends ModItem {
                                 .nutrition(5)
                                 .saturationModifier(0.7f)
                                 .build())
-                , "fried_warped_fungus");
+                , "fried_blue_fungus");
     }
 }
