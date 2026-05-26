@@ -1,4 +1,4 @@
-package ivan.mushroomsdelight.recipes;
+package ivan.mushroomsdelight.data.recipes;
 
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import ivan.mushroomsdelight.items.ModItems;

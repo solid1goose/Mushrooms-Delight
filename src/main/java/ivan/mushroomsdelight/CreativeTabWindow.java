@@ -1,5 +1,6 @@
 package ivan.mushroomsdelight;
 
+import ivan.mushroomsdelight.blocks.ModBlocks;
 import ivan.mushroomsdelight.items.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -25,6 +26,7 @@ public class CreativeTabWindow {
                 for (int i = 0; i < ModItems.newItems.size();i++){
                     output.accept(ModItems.newItems.get(i).asItem());
                 }
+                output.accept(ModBlocks.TEAPOT);
             })
             .build();
 }

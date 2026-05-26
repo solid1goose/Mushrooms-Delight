@@ -1,9 +1,6 @@
-package ivan.mushroomsdelight;
+package ivan.mushroomsdelight.data.recipes;
 
-import ivan.mushroomsdelight.recipes.CraftingTableRecipes;
-import ivan.mushroomsdelight.recipes.CuttingRecipes;
-import ivan.mushroomsdelight.recipes.FurnaceRecipes;
-import ivan.mushroomsdelight.recipes.PotRecipes;
+import ivan.mushroomsdelight.MushroomsDelight;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;

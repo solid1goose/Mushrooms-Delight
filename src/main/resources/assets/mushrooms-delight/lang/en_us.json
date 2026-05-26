@@ -1,4 +1,6 @@
 {
+  "item.mushrooms-delight.tea_amplified_hell": "Infernal amplified tea",
+  "item.mushrooms-delight.tea_time_hell": "Infernal long-lasting tea",
   "item.mushrooms-delight.cigarette": "Cigarette",
   "item.mushrooms-delight.bong": "Bong",
   "item.mushrooms-delight.dried_crimson_fungus": "Dried crimson fungus pieces",
@@ -15,11 +17,12 @@
   "item.mushrooms-delight.julienne": "Julienne",
   "item.mushrooms-delight.risotto": "Risotto",
   "item.mushrooms-delight.mushroom_potato_pie": "Mushroom and potato bun",
-  "item.mushrooms-delight.speed_tea": "Tea for speed",
-  "item.mushrooms-delight.mine_tea": "Tea for mining speed",
+  "item.mushrooms-delight.tea_time": "Long-lasting tea",
+  "item.mushrooms-delight.tea_amplified": "Amplified tea",
   "item.mushrooms-delight.brown_mushroom_pieces": "Pieces of brown mushroom",
   "item.mushrooms-delight.red_mushroom_pieces": "Pieces of red mushroom",
   "item.mushrooms-delight.dried_brown_mushroom_pieces": "Dried pieces of brown mushroom",
   "item.mushrooms-delight.dried_red_mushroom_pieces": "Dried pieces of red mushroom",
+  "effect.mushrooms-delight.mushroom_jump": "Mushroom jump",
   "effect.mushrooms-delight.mushroom_speed": "Mushroom speed"
 }

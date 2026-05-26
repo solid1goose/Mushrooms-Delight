@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "mushrooms-delight:item/mine_tea",
-    "particles": "mushrooms-delight:item/mine_tea"
-  }
-}

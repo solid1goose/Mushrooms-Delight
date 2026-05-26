@@ -1,4 +1,4 @@
-package ivan.mushroomsdelight.recipes;
+package ivan.mushroomsdelight.data.recipes;
 
 import ivan.mushroomsdelight.items.ModItems;
 import net.minecraft.advancements.criterion.InventoryChangeTrigger;

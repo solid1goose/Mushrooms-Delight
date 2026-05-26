@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mushrooms-delight:item/tea_amplified_hell",
+    "particles": "mushrooms-delight:item/tea_amplified_hell"
+  }
+}

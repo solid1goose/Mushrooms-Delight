@@ -1,7 +1,12 @@
 package ivan.mushroomsdelight.items;
 
 import ivan.mushroomsdelight.MushroomsDelight;
+import ivan.mushroomsdelight.effects.ModEffects;
 import ivan.mushroomsdelight.items.moditems.*;
+import ivan.mushroomsdelight.tea.TeaAmplified;
+import ivan.mushroomsdelight.tea.TeaAmplifiedHell;
+import ivan.mushroomsdelight.tea.TeaTime;
+import ivan.mushroomsdelight.tea.TeaTimeHell;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -37,8 +42,11 @@ public class ModItems {
     public static final ModItem WARPED_PIECES = new WarpedPieces();
     public static final ModItem DRIED_WARPED_PIECES = new DriedWarped();
 
-    public static final ModItem TEA_SPEED = new TeaSpeed();
-    public static final ModItem TEA_MINE = new TeaMine();
+    public static final ModItem TEA_TIME = new TeaTime();
+    public static final ModItem TEA_AMPLIFIED = new TeaAmplified();
+
+    public static final ModItem TEA_TIME_HELL = new TeaTimeHell();
+    public static final ModItem TEA_AMPLIFIED_HELL = new TeaAmplifiedHell();
 
     public static final ModItem BONG = new Bong();
     public static final ModItem CIGARETTE = new Cigarette();
