@@ -18,7 +18,9 @@ public class ModBlocks {
     public static final Block TEAPOT = register(
             "teapot",
             Teapot::new,
-            BlockBehaviour.Properties.of(),
+            BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .noCollision(),
             true
     );
 

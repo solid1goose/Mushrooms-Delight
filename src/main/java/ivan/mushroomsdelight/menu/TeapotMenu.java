@@ -1,15 +1,12 @@
-package ivan.mushroomsdelight.screen;
+package ivan.mushroomsdelight.menu;
 
-import ivan.mushroomsdelight.MushroomsDelight;
 import ivan.mushroomsdelight.blocks.TeapotEntity;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
-import net.minecraft.world.inventory.ResultSlot;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 public class TeapotMenu extends AbstractContainerMenu {
     private final Container container;
@@ -86,5 +83,9 @@ public class TeapotMenu extends AbstractContainerMenu {
     public int getCookProgressionScaled() {
         int i = this.teapotData.get(0);
         return i != 0 ? i * 24 / 200 : 0;
+    }
+
+    public boolean isHeated() {
+        return this.teapotData.get(1) != 0;
     }
 }

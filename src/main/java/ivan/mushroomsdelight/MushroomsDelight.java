@@ -7,14 +7,20 @@ import ivan.mushroomsdelight.blocks.ModBlocks;
 import ivan.mushroomsdelight.effects.ModEffects;
 import ivan.mushroomsdelight.events.AttackEntity;
 import ivan.mushroomsdelight.items.ModItems;
+import ivan.mushroomsdelight.networking.ServerNetworking;
 import ivan.mushroomsdelight.particles.ParticlesRegister;
 import ivan.mushroomsdelight.tea.TeaComponent;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.permissions.Permissions;
+import net.minecraft.world.entity.player.Player;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,6 +34,7 @@ public class MushroomsDelight implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ServerNetworking.register();
 		CreativeTabWindow.CreativeTabWindowRegister();
 		ModItems.initialize();
 		ModEffects.initialize();

@@ -1,6 +1,8 @@
 package ivan.mushroomsdelight.mixin;
 
+import ivan.mushroomsdelight.networking.DoubleJumpPayload;
 import ivan.mushroomsdelight.effects.ModEffects;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,7 +27,7 @@ public abstract class MushroomJumpMixin {
     @Inject(method = "aiStep", at = @At("HEAD"))
     private void onAiStep(CallbackInfo ci) {
         LivingEntity self = (LivingEntity)(Object) this;
-        if (!self.hasEffect(ModEffects.MUSHROOM_JUMP) || !(self instanceof Player)){
+        if (!self.hasEffect(ModEffects.MUSHROOM_JUMP) || !(self instanceof Player player)){
             return;
         }
         boolean currentlyJumping = isJumping();
@@ -47,6 +49,9 @@ public abstract class MushroomJumpMixin {
             jumpFromGround();
             releasedJumpInAir = false; // чтобы не прыгнуть снова пока не отпустит
             currentJumps--;
+            ClientPlayNetworking.send(
+                    DoubleJumpPayload.INSTANCE
+            );
         }
 
         wasJumpingLastTick = currentlyJumping;

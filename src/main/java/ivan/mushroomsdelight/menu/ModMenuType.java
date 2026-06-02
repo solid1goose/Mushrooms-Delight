@@ -1,4 +1,4 @@
-package ivan.mushroomsdelight.screen;
+package ivan.mushroomsdelight.menu;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

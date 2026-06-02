@@ -1,4 +1,4 @@
-package ivan.mushroomsdelight.client;
+package ivan.mushroomsdelight.client.particles;
 
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
@@ -6,8 +6,8 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.RandomSource;
 
 public class SmokeParticle extends SingleQuadParticle {
-    protected SmokeParticle(ClientLevel level, double x, double y, double z, double xa, double ya, double za, SpriteSet sprite) {
-        super(level, x, y, z, sprite.get(0, 1));
+    protected SmokeParticle(ClientLevel level, double x, double y, double z, double xa, double ya, double za, SpriteSet sprites) {
+        super(level, x, y, z, sprites.get(0, 1));
         this.xd = xa;
         this.yd = ya;
         this.zd = za;
@@ -25,7 +25,10 @@ public class SmokeParticle extends SingleQuadParticle {
     @Override
     public void tick() {
         super.tick();
-            if (this.age >= this.lifetime - 60 && this.alpha > 0.01F) {
+        if (this.alpha <= 0.0F) {
+            return;
+        }
+        if (this.age >= this.lifetime - 60) {
             this.alpha -= 0.015F;
         }
     }

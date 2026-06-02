@@ -1,4 +1,5 @@
 {
+  "block.mushrooms-delight.teapot": "Teapot",
   "item.mushrooms-delight.tea_amplified_hell": "Infernal amplified tea",
   "item.mushrooms-delight.tea_time_hell": "Infernal long-lasting tea",
   "item.mushrooms-delight.cigarette": "Cigarette",
@@ -23,6 +24,6 @@
   "item.mushrooms-delight.red_mushroom_pieces": "Pieces of red mushroom",
   "item.mushrooms-delight.dried_brown_mushroom_pieces": "Dried pieces of brown mushroom",
   "item.mushrooms-delight.dried_red_mushroom_pieces": "Dried pieces of red mushroom",
-  "effect.mushrooms-delight.mushroom_jump": "Mushroom jump",
-  "effect.mushrooms-delight.mushroom_speed": "Mushroom speed"
+  "effect.mushrooms-delight.mushroom_jump": "Mushroom Jump",
+  "effect.mushrooms-delight.mushroom_speed": "Mushroom Speed"
 }

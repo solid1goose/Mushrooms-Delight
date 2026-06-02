@@ -1,5 +1,12 @@
 {
   "variants": {
-    "": { "model": "tutorial:block/teapot" }
+    "facing=north,support=none": { "model": "mushrooms-delight:block/teapot" },
+    "facing=north,support=tray": { "model": "mushrooms-delight:block/teapot_tray" },
+    "facing=south,support=none": { "model": "mushrooms-delight:block/teapot", "y": 180 },
+    "facing=south,support=tray": { "model": "mushrooms-delight:block/teapot_tray", "y": 180 },
+    "facing=west,support=none":  { "model": "mushrooms-delight:block/teapot", "y": 270 },
+    "facing=west,support=tray":  { "model": "mushrooms-delight:block/teapot_tray", "y": 270 },
+    "facing=east,support=none":  { "model": "mushrooms-delight:block/teapot", "y": 90 },
+    "facing=east,support=tray":  { "model": "mushrooms-delight:block/teapot_tray", "y": 90 }
   }
 }

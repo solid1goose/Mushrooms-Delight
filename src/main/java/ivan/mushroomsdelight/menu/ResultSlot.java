@@ -1,4 +1,4 @@
-package ivan.mushroomsdelight.screen;
+package ivan.mushroomsdelight.menu;
 
 import net.minecraft.world.Container;
 import net.minecraft.world.inventory.Slot;

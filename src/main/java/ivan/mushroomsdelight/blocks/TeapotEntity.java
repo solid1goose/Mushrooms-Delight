@@ -1,9 +1,8 @@
 package ivan.mushroomsdelight.blocks;
 
 import ivan.mushroomsdelight.data.tags.MushroomTags;
-import ivan.mushroomsdelight.items.ModItem;
 import ivan.mushroomsdelight.items.ModItems;
-import ivan.mushroomsdelight.screen.TeapotMenu;
+import ivan.mushroomsdelight.menu.TeapotMenu;
 import ivan.mushroomsdelight.tea.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -39,6 +38,8 @@ public class TeapotEntity extends BlockEntity implements ImplementedContainer, M
 
     private static final int MAX_BREW_TIME = 200;
 
+    public boolean isHeated = false;
+
     protected final ContainerData teapotData;
     public int brewTime = 0;
 
@@ -51,8 +52,10 @@ public class TeapotEntity extends BlockEntity implements ImplementedContainer, M
 
     public static void brewingTick(ServerLevel level, BlockPos pos, BlockState state, TeapotEntity teapotEntity){
         if (!teapotEntity.isHeated(level, pos)){
+            teapotEntity.isHeated = false;
             return;
         }
+        teapotEntity.isHeated = true;
         brewing(teapotEntity);
     }
 
@@ -89,7 +92,8 @@ public class TeapotEntity extends BlockEntity implements ImplementedContainer, M
                 Optional.ofNullable(teaEffect1),
                 Optional.ofNullable(teaEffect2)
         ));
-        tea.set(DataComponents.LORE, TeaItem.buildLore(tea));
+        TeaItem teaItem = (TeaItem) tea.getItem();
+        tea.set(DataComponents.LORE, TeaItem.buildLore(tea, teaItem.getDurationTicks(), teaItem.getPowerAmplifier()));
         return tea;
     }
 
@@ -145,18 +149,17 @@ public class TeapotEntity extends BlockEntity implements ImplementedContainer, M
     }
 
     private static void finishBrew(TeapotEntity teapotEntity){
-        teapotEntity.removeItem(0, 1);
-        teapotEntity.removeItem(1, 1);
-        teapotEntity.removeItem(2, 1);
-        teapotEntity.removeItem(3, 1);
-        teapotEntity.removeItem(MUSHROOM_SLOT, 1);
-
         ItemStack resultItemStack = teapotEntity.getItem(RESULT_SLOT);
         if (resultItemStack != ItemStack.EMPTY) {
             resultItemStack.setCount(resultItemStack.getCount() + 1);
         } else {
             teapotEntity.setItem(RESULT_SLOT, getBrewingTea(teapotEntity));
         }
+        teapotEntity.removeItem(0, 1);
+        teapotEntity.removeItem(1, 1);
+        teapotEntity.removeItem(2, 1);
+        teapotEntity.removeItem(3, 1);
+        teapotEntity.removeItem(MUSHROOM_SLOT, 1);
     }
 
     @Override
@@ -193,17 +196,17 @@ public class TeapotEntity extends BlockEntity implements ImplementedContainer, M
             }
 
             public int get(int index) {
-                int var10000;
                 switch (index) {
-                    case 0 -> var10000 = TeapotEntity.this.brewTime;
-                    default -> var10000 = 0;
+                    case 0: return TeapotEntity.this.brewTime;
+                    case 1: return TeapotEntity.this.isHeated ? 1 : 0;
+                    default: return 0;
                 }
-                return var10000;
             }
 
             public void set(int index, int value) {
                 switch (index) {
                     case 0 -> TeapotEntity.this.brewTime = value;
+                    case 1 -> TeapotEntity.this.isHeated = value != 0;
                 }
             }
 

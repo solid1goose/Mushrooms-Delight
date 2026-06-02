@@ -1,4 +1,4 @@
-package ivan.mushroomsdelight.screen;
+package ivan.mushroomsdelight.menu;
 
 import ivan.mushroomsdelight.data.tags.MushroomTags;
 import net.minecraft.world.Container;
